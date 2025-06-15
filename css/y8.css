@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.financial_platform_container_wrapper {
+    font-family: 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.primary_hero_section_layout {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    padding: 2rem;
+}
+
+.expert_profile_information_block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin-right: 2rem;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.circular_profile_avatar_image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff6b6b;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+    animation: subtle_floating_animation 3s ease-in-out infinite;
+}
+
+@keyframes subtle_floating_animation {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.main_content_information_panel {
+    flex: 2;
+    padding: 2rem;
+    color: white;
+}
+
+.primary_headline_title_text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+}
+
+.highlight_accent_color_span {
+    color: #ff6b6b;
+    background: linear-gradient(45deg, #ff6b6b, #ffa500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.descriptive_content_paragraph {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #f0f0f0;
+}
+
+.interactive_cta_button_element {
+    background: linear-gradient(45deg, #ff6b6b, #ffa500);
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+    animation: button_pulse_animation 2s infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes button_pulse_animation {
+    0% { box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4); }
+    50% { box-shadow: 0 5px 25px rgba(255, 107, 107, 0.7); }
+    100% { box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4); }
+}
+
+.interactive_cta_button_element:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.6);
+}
+
+.curriculum_details_section {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 3rem 2rem;
+    margin: 2rem 0;
+    border-radius: 20px;
+    color: #333;
+}
+
+.section_heading_title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #4a5568;
+    text-align: center;
+}
+
+.curriculum_item_list {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.curriculum_list_item_element {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+}
+
+.important_notice_section {
+    background: linear-gradient(45deg, #4ecdc4, #44a08d);
+    color: white;
+    padding: 2.5rem 2rem;
+    margin: 2rem 0;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.notice_content_text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.floating_bottom_cta_button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(45deg, #e74c3c, #c0392b);
+    color: white;
+    border: none;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(231, 76, 60, 0.5);
+    z-index: 1000;
+    animation: intense_breathing_animation 1.5s infinite;
+    white-space: nowrap;
+}
+
+@keyframes intense_breathing_animation {
+    0%, 100% { 
+        transform: translateX(-50%) scale(1);
+        box-shadow: 0 5px 20px rgba(231, 76, 60, 0.5);
+    }
+    50% { 
+        transform: translateX(-50%) scale(1.1);
+        box-shadow: 0 8px 30px rgba(231, 76, 60, 0.8);
+    }
+}
+
+.risk_disclosure_section {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem 2rem;
+    margin: 2rem 0;
+    border-radius: 20px;
+    color: #333;
+}
+
+.risk_warning_heading {
+    color: #e74c3c;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.warning_emoji_icon {
+    margin-right: 10px;
+    font-size: 1.8rem;
+}
+
+.risk_item_paragraph {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.footer_legal_links_section {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.legal_link_element {
+    color: #4ecdc4;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 0.9rem;
+}
+
+.legal_link_element:hover {
+    text-decoration: underline;
+}
+
+.course_content_image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.course_image_container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.highlight_limited_spots {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .primary_hero_section_layout {
+        flex-direction: column;
+        padding: 1rem;
+        min-height: auto;
+    }
+
+    .expert_profile_information_block {
+        margin-right: 0;
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+    }
+
+    .circular_profile_avatar_image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .primary_headline_title_text {
+        font-size: 1.8rem;
+    }
+
+    .curriculum_details_section,
+    .important_notice_section,
+    .risk_disclosure_section {
+        margin: 1rem 0;
+        padding: 2rem 1.5rem;
+    }
+
+    .floating_bottom_cta_button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+}

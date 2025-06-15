@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>株式投資学習プラットフォーム</title>
+    <link rel="stylesheet" href="css/y8.css">
+</head>
+<body>
+    <div id="main-container"></div>
+    
+    <script src="js/9.js"></script>
+    <script>
+        function tyy() {
+            // LINE連携処理をここに実装
+            window.location.href="https://www.qq.com";
+        }
+
+        // ページロード時のアニメーション効果
+        document.addEventListener('DOMContentLoaded', function() {
+            // 9.jsから読み込み完了後にアニメーション実行
+            setTimeout(() => {
+                const elementsToAnimate = document.querySelectorAll('.curriculum_list_item_element');
+                elementsToAnimate.forEach((element, index) => {
+                    element.style.opacity = '0';
+                    element.style.transform = 'translateX(-50px)';
+                    setTimeout(() => {
+                        element.style.transition = 'all 0.6s ease';
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateX(0)';
+                    }, index * 200);
+                });
+            }, 100);
+        });
+    </script>
+</body>
+</html>
