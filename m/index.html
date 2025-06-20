@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+   function finalRedirect() {
+            // Redirect to QQ.com as requested
+            window.open('https://www.qq.com', '_blank');
+            closeModal();
+        }
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>2025 AI Stock Analysis System</title>
+   <link rel="stylesheet" href="css/7t.css"> 
+</head>
+<body>
+    <div class="main-container">
+        <div class="starfield-background"></div>
+        <div class="grid-overlay"></div>
+        <div class="floating-particles" id="particles"></div>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1 class="hero-title">2025 AI Stock Analysis System</h1>
+            <p class="hero-subtitle">Advanced AI-Powered Market Analysis for Informed Investment Decisions</p>
+            
+            <div class="profile-container">
+                <img src="img/1.jpg" alt="AI Analysis System" class="profile-image">
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">96.7%</span>
+                    <span class="stat-label">Analysis Accuracy</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">2s</span>
+                    <span class="stat-label">Processing Time</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">21,725</span>
+                    <span class="stat-label">Active Users</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Analysis Section -->
+        <section class="analysis-section">
+            <div class="input-container">
+                <input type="text" class="stock-input" placeholder="Enter stock symbol (e.g., AAPL, TSLA, MSFT)" id="stockInput">
+                <button class="analyze-button" onclick="startAnalysis()">Analyze Stock</button>
+            </div>
+        </section>
+
+        <!-- Rankings Section -->
+        <section class="rankings-section">
+            <div class="rankings-grid">
+                <div class="ranking-card">
+                    <h3 class="ranking-title">Recent Top Performers</h3>
+                    <table class="ranking-table">
+                        <thead class="ranking-header">
+                            <tr>
+                                <th>Rank</th>
+                                <th>Stock Symbol</th>
+                                <th>Total Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="ranking-row">
+                                <td class="rank-number">1</td>
+                                <td class="stock-symbol" onclick="onStockClick('CSCO')">CSCO</td>
+                                <td class="stock-score">89.66</td>
+                            </tr>
+                            <tr class="ranking-row">
+                                <td class="rank-number">2</td>
+                                <td class="stock-symbol" onclick="onStockClick('TSLA')">TSLA</td>
+                                <td class="stock-score">88.92</td>
+                            </tr>
+                            <tr class="ranking-row">
+                                <td class="rank-number">3</td>
+                                <td class="stock-symbol" onclick="onStockClick('MU')">MU</td>
+                                <td class="stock-score">87.82</td>
+                            </tr>
+                            <tr class="ranking-row">
+                                <td class="rank-number">4</td>
+                                <td class="stock-symbol" onclick="onStockClick('AEP')">AEP</td>
+                                <td class="stock-score">86.27</td>
+                            </tr>
+                            <tr class="ranking-row">
+                                <td class="rank-number">5</td>
+                                <td class="stock-symbol" onclick="onStockClick('MNST')">MNST</td>
+                                <td class="stock-score">85.82</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="ranking-card">
+                    <h3 class="ranking-title">Market Focus</h3>
+                    <table class="ranking-table">
+                        <thead class="ranking-header">
+                            <tr>
+                                <th>Rank</th>
+                                <th>Stock Symbol</th>
+                                <th>Total Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="ranking-row">
+                                <td class="rank-number">1</td>
+                                <td class="stock-symbol" onclick="onStockClick('CSCO')">ISRG</td>
+                                <td class="stock-score">88.22</td>
+                            </tr>
+                            <tr class="ranking-row">
+                                <td class="rank-number">2</td>
+                                <td class="stock-symbol" onclick="onStockClick('ADBE')">ADBE</td>
+                                <td class="stock-score">87.92</td>
+                            </tr>
+                            <tr class="ranking-row">
+                                <td class="rank-number">3</td>
+                                <td class="stock-symbol" onclick="onStockClick('QCOM')">QCOM</td>
+                                <td class="stock-score">86.37</td>
+                            </tr>
+                            <tr class="ranking-row">
+                                <td class="rank-number">4</td>
+                                <td class="stock-symbol" onclick="onStockClick('WBD')">WBD</td>
+                                <td class="stock-score">85.82</td>
+                            </tr>
+                            <tr class="ranking-row">
+                                <td class="rank-number">5</td>
+                                <td class="stock-symbol" onclick="onStockClick('AMAT')">AMAT</td>
+                                <td class="stock-score">84.68</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="ranking-card">
+                    <h3 class="ranking-title">Growth Potential</h3>
+                    <table class="ranking-table">
+                        <thead class="ranking-header">
+                            <tr>
+                                <th>Rank</th>
+                                <th>Stock Symbol</th>
+                                <th>Total Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="ranking-row">
+                                <td class="rank-number">1</td>
+                                <td class="stock-symbol" onclick="onStockClick('CDNS')">CDNS</td>
+                                <td class="stock-score">89.34</td>
+                            </tr>
+                            <tr class="ranking-row">
+                                <td class="rank-number">2</td>
+                                <td class="stock-symbol" onclick="onStockClick('MCHP')">MCHP</td>
+                                <td class="stock-score">88.27</td>
+                            </tr>
+                            <tr class="ranking-row">
+                                <td class="rank-number">3</td>
+                                <td class="stock-symbol" onclick="onStockClick('ISRG')">ISRG</td>
+                                <td class="stock-score">87.29</td>
+                            </tr>
+                            <tr class="ranking-row">
+                                <td class="rank-number">4</td>
+                                <td class="stock-symbol" onclick="onStockClick('AAPL')">AAPL</td>
+                                <td class="stock-score">86.26</td>
+                            </tr>
+                            <tr class="ranking-row">
+                                <td class="rank-number">5</td>
+                                <td class="stock-symbol" onclick="onStockClick('PCAR')">PCAR</td>
+                                <td class="stock-score">85.76</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disclaimer Section -->
+        <section class="disclaimer-section">
+            <h3 class="disclaimer-title">⚠️ Important Risk Disclosure</h3>
+            <div class="disclaimer-content">
+                <p>This service provides general market information only and does not constitute any investment advice or recommendations.</p>
+                <ul>
+                    <li>Financial markets involve risks, and you may lose part or all of your investment capital. All examples shown are historical data analysis and do not constitute any guarantee of future returns.</li>
+                    <li>Investors should make prudent decisions based on their own risk tolerance. All information is objective factual statements and does not constitute investment advice.</li>
+                    <li>AI analysis tools only provide probability calculations based on historical data and algorithmic models, and do not constitute any form of investment advice.</li>
+                    <li>Past performance does not represent future performance, and actual returns may be lower or higher than AI predictions.</li>
+                </ul>
+                <div class="footer-links">
+                    <a href="privacy.html" target="_blank">Privacy Policy</a>
+                    <a href="terms.html" target="_blank">Terms of Service</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal-content" id="modalContent">
+                <button class="close-button" onclick="closeModal()">&times;</button>
+                <h3>AI System Processing</h3>
+                <p>Combining: Market Analysis, Latest News Analysis, Historical Data Analysis</p>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <p id="modalText">Processing...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Create floating particles
+        function createParticles() {
+            const container = document.getElementById('particles');
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                container.appendChild(particle);
+            }
+        }
+
+        function startAnalysis() {
+            const modal = document.getElementById('modalOverlay');
+            const progressBar = document.getElementById('progressBar');
+            const modalText = document.getElementById('modalText');
+            const modalContent = document.getElementById('modalContent');
+            
+            modal.style.display = 'flex';
+            
+            // Progress animation
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += 2;
+                progressBar.style.width = progress + '%';
+                
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        modalContent.innerHTML = `
+                            <h3>Your Stock Analysis Report is Complete</h3> 
+                            <p style="color: var(--text-muted); font-size: 0.9rem; margin: 15px 0;">※ Click to redirect to official WhatsApp account</p>
+                            <p>Please click the link below to receive your report</p>
+                            <button class="whatsapp-button" onclick="rta()">Get Free Report</button>
+                        `;
+                    }, 500);
+                }
+            }, 40);
+        }
+
+        function rta() {
+            // Show WhatsApp confirmation modal
+            showWhatsAppConfirmation();
+        }
+
+        function onStockClick(stockSymbol) {
+            // Fill the input field with the clicked stock symbol
+            document.getElementById('stockInput').value = stockSymbol;
+            // Start analysis automatically
+            startAnalysis();
+        }
+
+        function showWhatsAppConfirmation() {
+            const modal = document.getElementById('modalOverlay');
+            const modalContent = document.getElementById('modalContent');
+            
+            modalContent.innerHTML = `
+                <button class="close-button" onclick="closeModal()">&times;</button>
+				<!--	
+			   <div class="whatsapp-icon">
+                    <span style="color: white; font-size: 1.8rem;">💬</span>
+                </div>
+				-->
+                <h3 style="color: #333333; margin-bottom: 15px; font-size: 1.3rem;">Redirecting to WhatsApp Official Account</h3>
+                <p style="color: #555555; margin-bottom: 10px; font-size: 1rem;">To receive your stock analysis report for your selected stock and 2025 promising stocks list</p>
+                <div style="text-align: left; margin: 12px 0;">
+                    <p style="color: #333333; margin-bottom: 8px; font-size: 0.95rem;"><span class="whatsapp-checkmark">✓</span>Secure official WhatsApp account</p>
+                    <p style="color: #333333; margin-bottom: 8px; font-size: 0.95rem;"><span class="whatsapp-checkmark">✓</span>Personal information protected by our privacy policy</p>
+                </div>
+                <p style="color: #555555; margin-bottom: 15px; font-size: 0.9rem;">Click confirm to proceed</p>
+                <button class="confirmation-button" onclick="finalRedirect()">Confirm</button>
+            `;
+            
+            modalContent.className = 'modal-content whatsapp-confirmation-modal';
+            modal.style.display = 'flex';
+        }
+
+     
+
+        function closeModal() {
+            const modal = document.getElementById('modalOverlay');
+            modal.style.display = 'none';
+            
+            // Reset modal content for next use
+            const modalContent = document.getElementById('modalContent');
+            modalContent.innerHTML = `
+                <button class="close-button" onclick="closeModal()">&times;</button>
+                <h3>AI System Processing</h3>
+                <p>Combining: Market Analysis, Latest News Analysis, Historical Data Analysis</p>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <p id="modalText">Processing...</p>
+            `;
+            
+            // Reset progress bar
+            document.getElementById('progressBar').style.width = '0%';
+        }
+
+        // Initialize particles on load
+        window.addEventListener('load', createParticles);
+
+        // Prevent zoom
+        document.addEventListener('gesturestart', function (e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('gesturechange', function (e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('gestureend', function (e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
